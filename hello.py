@@ -32,7 +32,7 @@ class RoutesConfigurator:
     def configure(application):
         @application.route("/")
         def hello():
-            return "Flask Dockerized, my container number = " + str(Config.container_number)
+            return "Flask Dockerized, мій номер контейнера = " + str(Config.container_number)
 
         @application.route("/hello/<int:container>")
         def hello_container(container):
